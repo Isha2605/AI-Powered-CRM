@@ -1,4 +1,7 @@
 # AI-Powered-CRM Overview
 
-<img src="assets/home_page.jpg" width="400"/>
+<p float="left">
+  <img src="assets/home_page.jpg" width="45%" />
+  <img src="assets/home_page2.jpg" width="45%" />
+</p>
 
