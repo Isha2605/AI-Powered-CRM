@@ -1,7 +1,6 @@
 
 # 🤖 AI Powered CRM
 
-![CRM Banner](https://via.placeholder.com/1000x300.png?text=AI+Powered+CRM)
 
 An intelligent CRM solution that integrates AI technologies to optimize customer relationship management, sales tracking, communication, and overall enterprise resource planning (ERP) capabilities. This was a final-year engineering project developed as part of the Bachelor of Engineering curriculum at the International Institute of Information Technology, Pune.
 
@@ -122,6 +121,10 @@ Includes:
   <img src="assets/employee_reward.jpg" width="45%" />
   <img src="assets/bot2.jpg" width="45%" />
 </p>
+<p float="left">
+  <img src="assets/graph1.jpg" width="45%" />
+  <img src="assets/graph2.jpg" width="45%" />
+</p>
 
 ---
 
@@ -151,7 +154,4 @@ Includes:
 > Supervised by Prof. Deptii Chaudhari
 
 ---
-<p float="left">
-  <img src="assets/graph1.jpg" width="45%" />
-  <img src="assets/graph2.jpg" width="45%" />
-</p>
+
