@@ -118,7 +118,7 @@ Includes:
   <img src="assets/employee_performance prediction.jpg" width="45%" />
 </p>
 <p float="left">
-  <img src="assets/employee_reward.jpg" width="45%" />
+  <center><img src="assets/employee_reward.jpg" width="45%" /></center>
 </p>
 <p float="left">
   <img src="assets/graph1.jpg" width="45%" />
