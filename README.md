@@ -66,15 +66,43 @@ Includes:
 
 ### 1. Chatbot Module
 - Built using NLP techniques to handle customer queries.
+  
+<p float="left">
+  <img src="assets/bot.jpg" width="45%" />
+  <img src="assets/bot2.jpg" width="45%" />
+</p>
 
 ### 2. Sales Module
 - Tracks lead lifecycle, conversion status, and agent productivity.
 
+<p float="left">
+  <img src="assets/adding_sales.jpg" width="45%" />
+  <img src="assets/employee_performance prediction.jpg" width="45%" />
+</p>
+
 ### 3. Gamification Module
 - Visual leaderboards and performance rewards.
 
+<p float="left">
+  <center><img src="assets/employee_reward.jpg" width="45%" /></center>
+</p>
+
 ### 4. Communication Module
 - Integrates emails, messaging, and notifications.
+
+<p float="left">
+  <img src="assets/home_page.jpg" width="45%" />
+  <img src="assets/home_page2.jpg" width="45%" />
+</p>
+
+---
+
+### Other pages
+
+<p float="left">
+  <img src="assets/graph1.jpg" width="45%" />
+  <img src="assets/graph2.jpg" width="45%" />
+</p>
 
 ---
 
@@ -98,37 +126,6 @@ Includes:
 
 ---
 
-## 📸 Screenshots
-
-
-## Application Home Page
-<p float="left">
-  <img src="assets/home_page.jpg" width="45%" />
-  <img src="assets/home_page2.jpg" width="45%" />
-</p>
-
-## Chatbot page
-
-<p float="left">
-  <img src="assets/bot.jpg" width="45%" />
-  <img src="assets/bot2.jpg" width="45%" />
-</p>
-
-## Other pages
-
-<p float="left">
-  <img src="assets/adding_sales.jpg" width="45%" />
-  <img src="assets/employee_performance prediction.jpg" width="45%" />
-</p>
-<p float="left">
-  <center><img src="assets/employee_reward.jpg" width="45%" /></center>
-</p>
-<p float="left">
-  <img src="assets/graph1.jpg" width="45%" />
-  <img src="assets/graph2.jpg" width="45%" />
-</p>
-
----
 
 ## 📊 Results
 
