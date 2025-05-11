@@ -1,0 +1,10 @@
+{
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:@localhost/lp3",
+    "prod_uri":"mysql://root:@localhost/lp3",
+    "gmail-user":"hrcrm0110@gmail.com",
+    "gmail-password":"LOL@101010"
+  }
+}
