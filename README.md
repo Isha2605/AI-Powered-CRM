@@ -49,7 +49,10 @@ Traditional CRM systems lack adaptive intelligence. By integrating **Natural Lan
 
 ## 🧩 System Architecture
 
-![System Architecture](https://via.placeholder.com/700x400.png?text=System+Architecture)
+<p float="left">
+  <img src="assets/architecture_diagram_ai_powered_crm.jpg" width="45%" />
+  
+</p>
 
 Includes:
 - Frontend (User Interface)
