@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="static/nav_design2.css">
+    <link rel="stylesheet" href="static/form_des2.css">
+
+</head>
+<body style="font-family: 'Lato', sans-serif;background-color: #b1b1b1;">
+<header id="header">
+     <div style="z-index: 1;">
+       <nav class="links" style="--items:8;font-size:2.5em;font-weight:300;">
+		<a href="userhomepage">Home</a>
+		<a href="contact_form">Contact Customers</a>
+		<a href="open_chat">Chat With Us</a>
+        <a href="sales">Sales</a>
+        <a href="my_achievements">My Achievements</a>
+        <a href="lead_track">Track your Leads</a>
+        <a href="dropsession">Logout</a>
+		<a href="emp_profile">{{user}}</a>
+		<span class="line"></span>
+	</nav>
+     </div>
+
+</header>
+<h1>.</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<table id="sales">
+<thead>
+    <tr style="position: -webkit-sticky;top:60%;width:100%;">
+        {% for header in headings %}
+        <th style="position:sticky;">
+            {{ header }}
+        </th>
+        {% endfor %}
+    </tr>
+</thead>
+<tbody>
+    {% for row in data %}
+    {% if loop.index%2==0 %}
+        <tr style="background-color: #9ab;">
+    {% else %}
+         <tr style="background-color: #FFFFFF;">
+    {% endif %}
+        {% for cell in row %}
+        <td>
+            {{ cell }}
+        </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+<!--<a href="#" class="button" id="fixedbutton" style="background-color: #000000;border: none;color: white;padding: 15px 32px;text-align: center;ext-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;">Add Sales</a></center>-->
+<div id="contact" style="width:8vw;height: 6vh;align:center;padding-top: 7px;">Add Sales</div>
+<!--<div id="fadeall" style="background: rgba(5,3,0,0.63);height:100vh;width:100vw;position:fixed;margin:0px"><h2>SALES FORM</h2>-->
+
+<div id="contactForm">
+
+  <h1 style="color: white;">Add New Sales</h1>
+
+  <form action="add_sales" method="post">
+    <input name="op" placeholder="Order Priority" type="text" required />
+    <input name="region" placeholder="Region" type="text" required />
+    <input name="it" placeholder="Item Type" type="text" required />
+    <input name="unitsold" placeholder="Units Sold" type="number" required />
+    <input name="unitcost" placeholder="Units Cost" type="number" required />
+    <input name="totalcost" placeholder="Total Cost" type="number" required />
+    <input name="totalprofit" placeholder="Total Profit" type="number" required />
+    <input name="saleschannel" placeholder="Sales Channel" type="text" required />
+    <input name="country" placeholder="Country" type="text" required />
+    <input name="unitprice" placeholder="Unit Price" type="number" required />
+    <input name="totalrevenue" placeholder="Total Revenue" type="number" required />
+    <input class="formBtn" type="submit" />
+    <input class="formBtn" type="reset" />
+  </form>
+</div>
+<!--</div>-->
+</body>
+</html>
+
+<style>
+
+
+table {
+    z-index:0;
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+  margin: 1.5% 2% -5% 0.39%;
+  padding: 2rem;
+  border: 1px solid black;
+
+}
+th, td {
+  padding: 0.25rem;
+  border: 1px solid black;
+}
+tr.red th {
+  background: red;
+  color: white;
+  background-color: #9ab;
+}
+tr.green th {
+  background: green;
+  color: white;
+  background-color: #9ab;
+}
+tr.purple th {
+  background: purple;
+  color: white;
+  background-color: #9ab;
+}
+th {
+  background: black;
+  position: sticky;
+  top: 13.8%; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  color: #99aabb;
+  z-index: 1 !important;
+}
+
+#contact {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+}
+tr:hover {background-color: #f2f2f2 !important;}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script> -->
+<script src="static/func.js"></script>

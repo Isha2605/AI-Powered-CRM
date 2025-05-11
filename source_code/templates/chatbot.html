@@ -1,0 +1,123 @@
+
+<head>
+
+  
+
+  <link rel="stylesheet" href="static/botdesign.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="XGoLz/GGfWqOD2hgGv5ksLZO6EiEnTtly+lMFSbnJfVRmPkhUgQG/lvhL75CK99x+Uy2Vdiq18OqZRnMQEXqpw==" />
+<link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-4de243a40619a967c0bf13b95e1ac6f8de89d943b7fc8710de33f681fe287604.css" />
+<!--<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/global/global-e4c9f06437cc06d1dd0d87cf2fc0c330753d8df7c4940ae2e1f0128d83e4fc94.css" />-->
+<link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/packs/css/everypage-a4b4d2b8.css" />
+<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/page/page-ba42421f4543007eeae11ddc4484cb1d5efa7ec9bbf148848d49e34c8004d008.css" />
+<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/editor/editor-064656511422617089367b1571b83ef808cba8376b20a0591a19340a55705de9.css" />
+<link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2Fshivapandey%2Fpen%2FdWdRYM&format=json" title="Chat UI" />
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=P1Adp84AsLk3r-htKuc3JR4IQFuApro2ji2iAeZviNPg1SCQTcmiARCRGZZG9ylgcDQL2utOoP1Od7ikYafHVQ" charset="UTF-8"></script><script nonce="cjGU2a1UHYc=">
+  /* Firefox needs this to prevent FOUT */
+</script>
+<script src="https://cpwebassets.codepen.io/assets/common/everypage-db77ca8454a2eb83659918e08a9e53e3df938ae9e000bd413c19ebd2e27fbd2b.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/common/analytics_and_notifications-afa6925cbcff840929f2b7c543587d5f9d7a461af81ee7ca80631c8e37ac42f2.js"></script>
+<script src="https://cdn.speedcurve.com/js/lux.js?id=410041" async defer crossorigin="anonymous"></script>
+<script src="https://cpwebassets.codepen.io/assets/packs/js/vendor-fea9702e6cfadab0dbc1.chunk.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/packs/js/4-b9c3a55a701e2e895dfe.chunk.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/packs/js/everypage-33e60947d5dfe8126cda.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/full/full_page_renderer-b3891a314c6e460a29b4e2d6656e805a44bbeb6841d8bd4da16fc2e41869ce77.js"></script>
+
+<link rel="stylesheet" href="static/bootstrap.min.css">
+      <link rel="stylesheet" href="static/style.css">
+      <link rel="stylesheet" href="static/fontawesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+      <link rel="stylesheet" href="static/nav_design2.css">
+
+
+ 
+</head>
+<body style="background-image:url(static/imgs/chat.jpg);">
+<header id="header">
+     <div style="z-index: 1;">
+       <nav class="links" style="--items:8;">
+		<a href="userhomepage">Home</a>
+		<a href="contact_form">Contact Customers</a>
+		<a href="open_chat">Chat With Us</a>
+		<a href="sales">Sales</a>
+        <a href="my_achievements">My Achievements</a>
+        <a href="lead_track">Track your Leads</a>
+        <a href="dropsession">Logout</a>
+		<a href="emp_profile">{{user}}</a>
+		<span class="line"></span>
+	</nav>
+     </div>
+
+</header>
+<div id="myNav" class="overlay">
+    <div class="overlay-content" style="text-align:left;">
+      <div class="ovarlay_slide_cont" style="width: 40%;height:100%; margin: -10% 40% 40% 25%;text-align: justify;text-justify: inter-word;border-radius: 25px;background-color:#FFFFFF77;z-index:-1;">
+<p style="margin: 1.5% 5% 5% 14%;color:#000000;font-size:1.5em;">Hello. I am Sam. I am here to solve some of your basic queries related to this workplace. You can ask me any workplace related questions
+    and I will be more than happy to answer. I have answers to all your questions regarding the office address, wifi password, password reset,
+    company policy and promotion. Click on the button placed at the bottom right corner of this page to start a conversation with me.</p>
+</div>
+        <img src="static/imgs/bot1.png" alt="slider_img" style="text-align:left;width: 25%; height: 65%; margin: 0% 10% 2% 8%;z-index:2;">
+
+
+
+<div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+        <i class="material-icons">speaker_phone</i>
+  </div>
+
+<div class="chat-box">
+    <div class="chat-box-header">
+      Sam
+      <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+    </div>
+    <div class="chat-box-body">
+      <div class="chat-box-overlay">
+      </div>
+      <div class="chat-logs">
+
+      </div><!--chat-log -->
+    </div>
+    <div class="chat-input">
+      <form>
+        <input type="text" id="chat-input" placeholder="Send a message..." autocomplete="off"/>
+      <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+      </form>
+    </div>
+  </div>
+    </div>
+</div>
+
+
+  
+
+  <script src="static/bot2.js"></script>
+</body>
+<style>
+    .overlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.7);
+  overflow-x: hidden;
+
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+</style>

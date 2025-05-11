@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="static/nav_design2.css">
+</head>
+<body style="font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;background-color: #9ab;">
+
+<header id="header">
+     <div style="z-index: 1;">
+       <nav class="links" style="--items:8;font-size:2.5em;">
+		<a href="userhomepage">Home</a>
+		<a href="contact_form">Contact Customers</a>
+		<a href="open_chat">Chat With Us</a>
+        <a href="my_achievements">My Achievements</a>
+        <a href="lead_track">Track your Leads</a>
+		<a href="sales">Sales</a>
+        <a href="dropsession">Logout</a>
+		<a href="emp_profile">{{user}}</a>
+		<span class="line"></span>
+	</nav>
+     </div>
+<h1>.</h1>
+<br>
+    <br>
+</header>
+<div style="width: 50%; height: 175%;border-style: solid;border-width: thick;border-color: #000000;margin: 7% 0 10% 25.5%;border-radius: 25px;background-color:white;">
+    <center><h1>{{user}}'s Profile</h1></center>
+<div>
+<img src="static/imgs/lol1.png" style="width: 18vw;height:36vh;margin: 0 0 0 1.5vw;" align= "left">
+    <h2 align="left" style="margin: 0 0 0 50%;">Name: {{user}}</h2>
+    <br>
+    <h2 align="left" style="margin: 0 0 0 50%;">Department: Sales</h2>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="contact_info" style="color: white;background: black;">
+    <center><h2>PERSONAL INFORMATION</h2></center>
+</div>
+<table style="width:100%; margin: 0 0 0 10%;">
+  <tr>
+    <th>DOB:</th>
+    <td>{{dob}}</td>
+  </tr>
+  <tr>
+    <th>Sex:</th>
+    <td>{{sex}}</td>
+  </tr>
+</table>
+
+<div class="contact_info" style="color: white;background: black;">
+    <center><h2>CONTACT INFORMATION</h2></center>
+</div>
+<table style="width:100%; margin: 0 0 0 10%;">
+  <tr>
+    <th>Email:</th>
+    <td>{{email}}</td>
+  </tr>
+  <tr>
+    <th>Phone:</th>
+    <td></td>
+  </tr>
+</table>
+<div class="contact_info" style="color: white;background: black;">
+    <center><h2>CONTACT INFORMATION</h2></center>
+</div>
+<table style="width:100%; margin: 0 0 0 10%;">
+  <tr>
+    <th>Achievement Level:</th>
+    <td>{{medal}}</td>
+  </tr>
+</table>
+
+
+</div>
+</body>
+</html>
+
+<style>
+
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+</style>

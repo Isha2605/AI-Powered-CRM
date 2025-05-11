@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>NotAredHerring</title>
+      <link rel="stylesheet" href="static/bootstrap.min.css">
+      <link rel="stylesheet" href="static/style2.css">
+      <link rel="stylesheet" href="static/fontawesome.min.css">
+      <link rel="stylesheet" href="static/nav_design2.css">
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+       <meta charset="utf-8">
+    <meta name="description" content="Simple Modern-looking Event Calendar Plugin">
+    <meta name="keywords" content="jQuery, Plugin, Event, Calendar, EvoCalendar">
+    <meta name="author" content="Edlyn Villegas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="favicon.png">
+
+    <!-- Calendar CSS -->
+    <link rel="stylesheet" type="text/css" href="./static/evo-calendar.min.css">
+    <link rel="stylesheet" type="text/css" href="./static/evo-calendar.orange-coral.min.css">
+    <link rel="stylesheet" type="text/css" href="./static/evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" type="text/css" href="./static/evo-calendar.royal-navy.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./static/demo.css">
+    <!-- Calendar Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+   </head>
+   <body style="font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;">
+      <header id="header">
+     <div style="z-index: 1;">
+       <nav class="links" style="--items:4;">
+		<a href="userhomepage">Home</a>
+		<a href="bookmarks">Bookmarked Employees</a>
+		<a href="welcome">Predict Performance</a>
+<!--		<a href="track_performance">Reward Your Employees</a>-->
+		<a href="admin_profile">{{user}}</a>
+		<span class="line"></span>
+	</nav>
+     </div>
+
+</header>
+<h4>.</h4>
+<br>
+      <div id="home" class="slider">
+         <div id="main_slider" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img class="d-block w-100" src="static/imgs/home.jpg" alt="slider_img">
+                  <div class="ovarlay_slide_cont">
+                      <h2 style="font-size:70px;font-weight:500;font-family: 'Tungsten A', 'Tungsten B', 'Khand', sans-serif;line-height:70px;transform: scale(1, 1.5);">AI POWERED CRM</b></h2>
+                     <h4 style="font-size:2.64em;">Optimize your Business</h4>
+                     <p><b>WE HELP YOU GROW YOUR BUSINESS</b> - Introducing a product to analyse and predict the future performance of your employees to help you grow your business.</p>
+
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img class="d-block w-100" src="static/imgs/cust_serv.jpg" alt="slider_img">
+                  <div class="ovarlay_slide_cont">
+                     <h2>We love working</h2>
+                     <h4>Maintenance service</h4>
+                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years</p>
+                     <a class="blue_bt" href="#">Login</a>
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+      </div>
+      
+      
+      </div>
+      
+      <!--Calendar-->
+   <main>
+        <div class="main-container">
+
+            <section id="demos">
+                <div class="section-content">
+                    <h1>UPCOMING EVENTS/HOLIDAYS</h1>
+                    <div class="action-buttons">
+                        <p class="section-desc">.</p>
+                        <button class="btn-action" data-set-theme="Default" style="display:none;">DEFAULT</button>
+                        <button class="btn-action active" data-set-theme="Midnight Blue" style="display:none;">MIDNIGHT BLUE</button>
+                        <button class="btn-action " data-set-theme="Royal Navy" style="display:none;">ROYAL NAVY</button>
+                        <button class="btn-action" data-set-theme="Orange Coral" style="display:none;">ORANGE CORAL</button>
+                    </div>
+                    <div class="console-log">
+                        <div class="log-content">
+                            <div class="--noshadow" id="demoEvoCalendar"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+      
+      
+      <footer style="background: #000000;">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="footer_blog_section">
+<!--                     <img src="static/imgs/logo_resized.png" alt="#" />-->
+                     
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-12">
+                  <div class="item">
+                     <h4 class="text-uppercase">Navigation</h4>
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Location</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12">
+                  <div class="item">
+                     <h4 class="text-uppercase">Contact Info</h4>
+                     <p><strong>Address:</strong></p>
+                     <p><img src="static/imgs/phone_icon.png" alt="#" />White Square Building, Hinjewadi, Pune-57.</p>
+                     <p><strong>Customer Service:</strong></p>
+                     <p><img src="static/imgs/location.png" alt="#" /> 988 988 9898</p>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+        
+      </footer>
+
+
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         $(function () {
+             
+             'use strict';
+             
+             var winH = $(window).height();
+             
+             $('header').height(winH);  
+             
+             $('header .container > div').css('top', (winH / 2) - ( $('header .container > div').height() / 2));
+             
+             $('.navbar ul li a.search').on('click', function (e) {
+                 e.preventDefault();
+             });
+             $('.navbar a.search').on('click', function () {
+                 $('.navbar form').fadeToggle();
+             });
+             
+             $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                 
+                 var getAttr = $(this).attr('href');
+                 
+                 e.preventDefault();
+                 $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+             });
+         })
+      </script>
+      <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="./static/evo-calendar.min.js"></script>
+    <script src="./static/demo.js"></script>
+   </body>
+</html>

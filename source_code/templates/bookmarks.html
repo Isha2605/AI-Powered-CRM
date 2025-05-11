@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmarks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>NotAredHerring</title>
+      <link rel="stylesheet" href="static/bootstrap.min.css">
+      <link rel="stylesheet" href="static/style2.css">
+      <link rel="stylesheet" href="static/fontawesome.min.css">
+      <link rel="stylesheet" href="static/nav_design2.css">
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+       <meta charset="utf-8">
+    <meta name="description" content="Simple Modern-looking Event Calendar Plugin">
+    <meta name="keywords" content="jQuery, Plugin, Event, Calendar, EvoCalendar">
+    <meta name="author" content="Edlyn Villegas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+</head>
+<body style="background-image: url(static/imgs/download.jpg); ">
+<header id="header">
+     <div style="z-index: 1;">
+       <nav class="links" style="--items:4;">
+		<a href="adminhomepage">Home</a>
+		<a href="bookmarks">Bookmarked Employees</a>
+		<a href="welcome">Predict Performance</a>
+<!--		<a href="track_performance">Reward Your Employees</a>-->
+		<a href="admin_profile">{{user1}}</a>
+		<span class="line"></span>
+	</nav>
+     </div>
+
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4>{{ msg }}</h4>
+<table id="sales" width="100%">
+<thead>
+    <tr style="position: -webkit-sticky;top:60%;width:100%;">
+        {% for header in headings %}
+        <th style="position:sticky;">
+            {{ header }}
+        </th>
+        {% endfor %}
+        <th>Bookmark</th>
+    </tr>
+</thead>
+<tbody>
+    {% for row in data %}
+    {% if loop.index%2==0 %}
+        <tr style="background-color: #9ab;">
+    {% else %}
+         <tr style="background-color: #FFFFFF;">
+    {% endif %}
+        {% for cell in row %}
+        <td>
+            {{ cell }}
+        </td>
+
+        {% endfor %}
+        <td>
+            <form action="/remove_bookmarks" method="POST">
+                <input type="hidden" name="lol" value="{{ row[2] }}">
+<!--                <p>{{ row }}</p>-->
+                <button type="submit" class="btn btn-primary">Remove</button></form>
+        </td>
+    </tr>
+    {% endfor %}
+
+</tbody>
+</table>
+
+</body>
+</html>
+<style>
+
+
+table {
+    z-index:0;
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+  margin: 1.5% 2% -5% 0.39%;
+  padding: 2rem;
+  border: 1px solid black;
+
+}
+th, td {
+  padding: 0.25rem;
+  border: 1px solid black;
+}
+tr.red th {
+  background: red;
+  color: white;
+  background-color: #9ab;
+}
+tr.green th {
+  background: green;
+  color: white;
+  background-color: #9ab;
+}
+tr.purple th {
+  background: purple;
+  color: white;
+  background-color: #9ab;
+}
+th {
+  background: black;
+  position: sticky;
+  top: 13.8%; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  color: #99aabb;
+  z-index: 1 !important;
+}
+
+#contact {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+}
+tr:hover {background-color: #f2f2f2 !important;}
+</style>

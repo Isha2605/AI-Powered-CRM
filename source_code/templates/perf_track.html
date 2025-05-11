@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="static/nav_design2.css">
+</head>
+<body>
+<header id="header">
+     <div style="z-index: 1;">
+       <nav class="links" style="--items:5;">
+		<a href="adminhomepage">Home</a>
+		<a href="#">About</a>
+		<a href="welcome">Predict Performance</a>
+		<a href="track_performance">Reward your Employees</a>
+		<a href="dropsession">{{user}}</a>
+		<span class="line"></span>
+	</nav>
+     </div>
+
+</header>
+<h1>.</h1>
+<div style="margin: 5% 10% 5% 40%;">
+
+<table>
+<thead>
+	<tr>
+	{% for header in headings %}
+        <th >
+          {{ header }}
+        </th>
+    {% endfor %}
+	</tr>
+</thead>
+<tbody>
+{% for row in data %}
+	<tr>
+        {% for cell in row %}
+        <td >
+            {{ cell }}
+        </td>
+        {% endfor %}
+
+	</tr>
+{% endfor %}
+</tbody>
+</table>
+
+</div>
+
+</body>
+</html>
+
+<style>
+    table {
+    z-index:1;
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+  margin: 1% 2% -5% 0.39%;
+  padding: 2rem;
+  border: 1px solid black;
+}
+th, td {
+  padding: 1rem;
+  border: 1px solid black;
+}
+tr.red th {
+  background: red;
+  color: white;
+}
+tr.green th {
+  background: green;
+  color: white;
+}
+tr.purple th {
+  background: purple;
+  color: white;
+}
+th {
+  background: black;
+  position: sticky;
+  top: 10%; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+</style>

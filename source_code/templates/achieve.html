@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="static/nav_design2.css">
+</head>
+<body style="font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;background-image:url(static/imgs/wall4.jpg)">
+<header id="header">
+     <div style="z-index: 1;">
+       <nav class="links" style="--items:8;font-size:2.5em;">
+		<a href="userhomepage">Home</a>
+		<a href="contact_form">Contact Customers</a>
+		<a href="open_chat">Chat With Us</a>
+		<a href="sales">Sales</a>
+		<a href="my_achievements">My Achievements</a>
+		<a href="lead_track">Track your Leads</a>
+		<a href="dropsession">Logout</a>
+		<a href="emp_profile">{{user}}</a>
+		<span class="line"></span>
+	</nav>
+     </div>
+
+</header>
+<div style="margin-top:8%;background: black;color:white;">
+	<center><h1 style="font-size: 3em;"><b>WALL OF ACHIEVEMENTS</b></h1></center>
+</div>
+
+{% for i in arr %}
+ {% set item_1 = lol[loop.index-1] %}
+<div class="medal" style="background: rgba(5,3,0,0.63);width: 75%;height: 25%;margin: 5% 10% 5% 10.5%;z-index: 0;top: 0;left: 0;padding: 20px 20px 200px;margin-top: 5%;border-radius: 25px;">
+	<div style="float:left;">
+	<img src="{{i}}" style="width: 17vw;height: 32vh;margin: -5% 5% 0% 5%;">
+	</div>
+	<div style="float: left; margin:3.5% 10% 5% 15%;">
+	<p style="color:white;font-size:1.5em;"> For receiving employee of month {{loop.index}} times</p>
+		<br><br>
+	<h1 style="color:white;font-size: 2.5em;">{{item_1}}, 2021</h1>
+	</div>
+
+	</div>
+
+{% endfor %}
+</body>
+</html>
