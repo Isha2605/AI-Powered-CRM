@@ -1,0 +1,54 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "performance_module",
+         "patterns": ["How to use performance module","steps to use performance module"],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "promotion",
+         "patterns": ["When will I get promoted?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered","promotion"],
+         "responses": ["Please Contact your superiors to know about promotion","Keep working as hard as you can and as smartly as you can and no one can stop you from getting promoted"],
+         "context": [""]
+        },
+        {"tag": "office_address",
+         "patterns": ["what is our detailed office address?","office address?"],
+         "responses": ["White Square Building, Hinjewadi, Pune-57."],
+         "context": [""]
+        },
+		{"tag": "password_reset",
+         "patterns": ["password reset","how to reset account password?"],
+         "responses": ["Sorry, can't understand you", "Contact Database admin(9090909090) to reset your account password", "Contact Database Admin at 9090909090 to reset your password"],
+         "context": [""]
+        },
+		{"tag": "wifi-password",
+         "patterns": ["wifi-password?","what is the wifi-password?","most recent wifi-password","current wifi password"],
+         "responses": ["wifi678"],
+         "context": [""]
+        },
+        {"tag": "company policy",
+         "patterns": ["company policy?","what is the company policy?","detailed company policy"],
+         "responses": ["Visit <a href=''>www.notaredherring.com</a> to know about the company policy"],
+         "context": [""]
+        },
+        {"tag": "performance reviews",
+         "patterns": ["how are performance reviews conducted?","how is performance analysis done?","detailed company policy"],
+         "responses": ["wifi678"],
+         "context": [""]
+        }
+        
+   ]
+}
