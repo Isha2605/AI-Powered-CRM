@@ -148,7 +148,6 @@ Includes:
 - **Isha Narkhede**  
 - Ishaan Pathak  
 - Apoorva Ray Chaudhuri  
-- Himanshu Nakkanwar  
 
 > Supervised by Prof. Deptii Chaudhari
 
